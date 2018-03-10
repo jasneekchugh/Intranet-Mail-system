@@ -25,7 +25,7 @@ public class alogin extends HttpServlet {
             connection ob=new connection();
              Connection con=ob.conn();
              boolean status=false;
-                        
+            //used to fetch data from the database.
             PreparedStatement ps=con.prepareStatement("select * from admin1 where aname=? and apass=?");
             ps.setString(1,name);
             ps.setString(2,pass);
